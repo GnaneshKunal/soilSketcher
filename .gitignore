@@ -1,0 +1,15 @@
+node_modules/
+config.js
+/public/bundle.js
+
+#dist folder
+dist
+
+#env variables
+.env
+
+#secret
+config.js
+
+#firebase
+firebase/
