@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "mocha --compilers js:babel-core/register --require ./public/test/test_helper.js --recursive ./public/test",
-    "test:watch": "npm run test -- --watch",
     "dev": "nodemon index.js"
   },
   "repository": {
