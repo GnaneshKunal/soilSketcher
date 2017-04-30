@@ -1,7 +1,13 @@
-## soilSketcher
+# soilSketcher
+
+## Based on
+
+### - [http://nodemcu.com/index_en.html](NODEMCU)   :trollface:
+### - [https://facebook.github.io/react/](React)   :blue_heart:
+### - [https://firebase.google.com/](Firebase)  :fire:
 
 ### Usage
-####First bundle and run the Server
+#### First bundle and run the Server
 ```
 $ webpack -w // bundles and -w (watches)
 ```
@@ -11,10 +17,7 @@ $ webpack -w // bundles and -w (watches)
 $ node index.js 
 ```
 
-###You can view the realtime plotting in
-```
-http://localhost:${PORT}/values //
-```
+Visit [http://localhost:8080/values](http://localhost:8080/values) for realtime plotting.
 
 ## Contributing
 
