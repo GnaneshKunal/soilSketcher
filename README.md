@@ -17,7 +17,7 @@ $ webpack -w // bundles and -w (watches)
 $ node index.js 
 ```
 
-Visit [http://localhost:8080/values](http://localhost:8080/values) for realtime plotting.
+Visit [http://localhost:8080/](http://localhost:8080/) for realtime plotting.
 
 ## Contributing
 
