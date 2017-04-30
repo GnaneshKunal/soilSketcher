@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import _ from 'lodash';
@@ -57,5 +57,9 @@ class IndexPage extends Component {
 function mapStateToProps(state) {
     return { soil: state.soil.soil }
 }
+
+IndexPage.propTypes = {
+    soil: PropTypes.object.isRequired
+};
 
 export default connect(mapStateToProps, actions)(IndexPage);
