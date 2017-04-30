@@ -2,9 +2,9 @@
 
 ## Based on
 
-### - [http://nodemcu.com/index_en.html](NODEMCU)   :trollface:
-### - [https://facebook.github.io/react/](React)   :blue_heart:
-### - [https://firebase.google.com/](Firebase)  :fire:
+### - [NodeMcu](http://nodemcu.com/index_en.html)   :trollface:
+### - [React](https://facebook.github.io/react/)   :blue_heart:
+### - [Firebase](https://firebase.google.com/)  :fire:
 
 ### Usage
 #### First bundle and run the Server
