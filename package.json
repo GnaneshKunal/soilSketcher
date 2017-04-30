@@ -1,16 +1,13 @@
 {
-  "name": "soil-reactfire",
+  "name": "soil-sketcher",
   "version": "1.0.0",
-  "description": "records soil moisture and publishes to cloud",
+  "description": "monitors, records and plots soil values",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
+  "repository": "https://GnaneshKunal@gitlab.com/GnaneshKunal/soilSketcher.git",
   "author": "gnanesh",
   "license": "ISC",
   "bugs": {
