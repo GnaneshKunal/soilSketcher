@@ -1,14 +1,14 @@
 ## soilSketcher
 
-### Using the Server
+### Usage
+####First bundle and run the Server
+```
+$ webpack -w // bundles and -w (watches)
+```
+#### Using the Server
 
 ```
 $ node index.js 
-```
-### Usage
-
-```
-$ webpack -w // bundles and -w (watches)
 ```
 
 ###You can view the realtime plotting in
