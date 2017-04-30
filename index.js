@@ -7,7 +7,6 @@ const http = require('http'),
       bodyParser = require('body-parser'),
       morgan = require('morgan'),
       app = express(),
-      cors = require('cors'),
       server = http.createServer(app),
       PORT = process.env.PORT || 8080;
 
@@ -17,7 +16,6 @@ firebase.initializeApp({
 });
 
 app.use(morgan('tiny'));
-app.use(cors()); //if the data comes from a different domain, sub-domain or port
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
