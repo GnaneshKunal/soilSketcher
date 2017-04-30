@@ -1,6 +1,7 @@
 const http = require('http'),
       express = require('express'),
       path = require('path'),
+      open = require('open'),
       firebase = require('firebase-admin'),
       firebaseAccount = require('./firebase'),
       bodyParser = require('body-parser'),
@@ -53,4 +54,5 @@ app.get('/values', (req, res, next) => {
 
 server.listen(PORT, () => {
     console.log('Server listening on PORT: ' + PORT);
+    open(`http://localhost:${PORT}/values`);
 });
