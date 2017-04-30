@@ -4,7 +4,6 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        Soil - React Fire
         {this.props.children}
       </div>
     );

@@ -19,8 +19,8 @@ class IndexPage extends Component {
         if (val !== undefined) {
             _.forIn(val, function(value, key) {
                 let date = new Date(key * 1000);
-                let name = date.getMinutes();
-                soilValues.push({ name, pv: value });
+                let name = date.getHours() + ':' + date.getMinutes();
+                soilValues.push({ name, "Soil Value": value });
             });
         }
     }
@@ -36,7 +36,7 @@ class IndexPage extends Component {
                     <CartesianGrid strokeDasharray="3 3" />
                     <Tooltip />
                     <Legend />
-                    <Line isAnimationActive={false} type="monotone" dataKey="pv" stroke="#8884d8" />
+                    <Line isAnimationActive={false} type="monotone" dataKey="Soil Value" stroke="#8884d8" />
                     </LineChart>
                 </div>
             );
@@ -47,7 +47,7 @@ class IndexPage extends Component {
         this.doRender(this.props.soil);
         return (
             <div>
-                                    SOIL VALUE.
+                                    SOIL VALUES:
       {this.chart(soilValues)}
             </div>
         );
