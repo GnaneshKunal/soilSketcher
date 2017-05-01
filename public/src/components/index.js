@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import _ from 'lodash';
+import moment from 'moment';
 let soilValues = [];
 import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
@@ -18,8 +19,7 @@ class IndexPage extends Component {
     doRender(val) {
         if (val !== undefined) {
             _.forIn(val, function(value, key) {
-                let date = new Date(key * 1000);
-                let name = date.getHours() + ':' + date.getMinutes();
+                let name = moment(parseInt(key)).format('HH:mm:ss');
                 soilValues.push({ name, "Soil Value": value });
             });
         }
@@ -59,7 +59,7 @@ function mapStateToProps(state) {
 }
 
 IndexPage.propTypes = {
-    soil: PropTypes.object.isRequired
+    soil: PropTypes.object
 };
 
 export default connect(mapStateToProps, actions)(IndexPage);
