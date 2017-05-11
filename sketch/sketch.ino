@@ -38,9 +38,7 @@ void loop() {
   lcd.print("  ");
   lcd.print(val);
   lcd.print("  ");
-  if (strlen(str) > 0){
-    lcd.print(str);
-  }
+  lcd.print(str);
   Serial.print("Connecting to ");
   Serial.println(host);
   WiFiClient client;
