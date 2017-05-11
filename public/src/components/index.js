@@ -55,11 +55,12 @@ class IndexPage extends Component {
 }
 
 function mapStateToProps(state) {
-    return { soil: state.soil.soil }
+    return { soil: state.soil.soil };
 }
 
 IndexPage.propTypes = {
-    soil: PropTypes.object
+    soil: PropTypes.object,
+    getSoil: PropTypes.func.isRequired
 };
 
 export default connect(mapStateToProps, actions)(IndexPage);
