@@ -1,17 +1,17 @@
 {
   "name": "soil-sketcher",
-  "version": "1.0.0",
+  "version": "1.2.2",
   "description": "monitors, records and plots soil values",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "repository": "https://GnaneshKunal@gitlab.com/GnaneshKunal/soilSketcher.git",
+  "repository": "https://github.com/GnaneshKunal/soilSketcher.git",
   "author": "gnanesh",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/GnaneshKunal/soilSketcher/issues"
   },
   "homepage": "",
   "devDependencies": {
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
-    "babel-preset-stage-1": "^6.1.18",
+    "babel-preset-stage-1": "^6.24.1",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "firebase-admin": "^4.2.1",
