@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
-import _ from 'lodash/forIn';
+import forIn from 'lodash/forIn';
 import moment from 'moment';
 let soilValues = [];
 import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
@@ -18,7 +18,7 @@ class IndexPage extends Component {
 
     doRender(val) {
         if (val !== undefined) {
-            _.forIn(val, function(value, key) {
+            forIn(val, function(value, key) {
                 let name = moment(parseInt(key)).format('HH:mm:ss');
                 soilValues.push({ name, "Soil Value": value });
             });
