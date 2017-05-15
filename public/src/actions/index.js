@@ -15,7 +15,8 @@ export function getSoil() {
                   });
               })
               .catch(err => {
+                  /*eslint no-console: */
                   console.log(err.response);
               });
-    }
+    };
 }

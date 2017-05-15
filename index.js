@@ -51,6 +51,7 @@ app.get('/values', (req, res, next) => {
 });
 
 server.listen(PORT, () => {
+    /*eslint no-console: */
     console.log('Server listening on PORT: ' + PORT);
     open(`http://localhost:${PORT}/`);
 });
