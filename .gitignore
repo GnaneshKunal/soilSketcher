@@ -4,6 +4,7 @@ config.js
 
 #dist folder
 dist
+.vscode/
 
 #env variables
 .env
